@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!-- <PropertyList include="s55-jsbsim-cnf.xml"> -->
+<PropertyList include="s55-yasim-cnf.xml">
+
+  <sim>
+    <description>Savioa Marchetti S55</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+  </sim>
+
+</PropertyList>
+

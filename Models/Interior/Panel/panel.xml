@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.105 </x-m>
+      <y-m> -0.413 </y-m>
+      <z-m>  0.051 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.105 </x-m>
+      <y-m>  0.277 </y-m>
+      <z-m>  0.051 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.103 </x-m>
+      <y-m> -0.341 </y-m>
+      <z-m>  0.051 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.103 </x-m>
+      <y-m>  0.349 </y-m>
+      <z-m>  0.051 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.105 </x-m>
+      <y-m> -0.271 </y-m>
+      <z-m>  0.051 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.105 </x-m>
+      <y-m>  0.419 </y-m>
+      <z-m>  0.051 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.104 </x-m>
+      <y-m> -0.423 </y-m>
+      <z-m> -0.036 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.104 </x-m>
+      <y-m>  0.267 </y-m>
+      <z-m> -0.036 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.105 </x-m>
+      <y-m> -0.354 </y-m>
+      <z-m> -0.051 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.105 </x-m>
+      <y-m>  0.337 </y-m>
+      <z-m> -0.051 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.105 </x-m>
+      <y-m> -0.271 </y-m>
+      <z-m> -0.049 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.105 </x-m>
+      <y-m>  0.419 </y-m>
+      <z-m> -0.049 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+
