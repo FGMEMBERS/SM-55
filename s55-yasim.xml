@@ -1,16 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!-- Savoia Marchetti S 55 - 2008 Emmanuel BARANGER
+ 
+     sources      : http://en.wikipedia.org/wiki/Savoia-Marchetti_S.55
 
      Wingspan     : 24.00 m                           ( 78 ft  9 in)
      Lenght       : 16.75 m                           ( 54 ft 11 in)
      Height       :  5.00 m                           ( 16 ft  5 in)
      Weight       :  5750 Kg                          (12677 lb)
      Engines      : 2 x Isotta - Fraschini "Asso 750R"( 800 hp)
-     Speed cruise : 233 km/h                          ( 126 kts)
+     Cruise speed : 233 km/h                          ( 126 kts)
+     Max speed    : 279 km/h                          (
      Ceilling     : 5000 m                            (16400 ft)
 -->
+
 <airplane mass="12677">
 
-  <approach speed="75" aoa="5" fuel="0.2">
+  <approach speed="65" aoa="5" fuel="0.2">
      <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
      <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
      <control-setting axis="/controls/engines/engine[1]/throttle" value="0.2"/>
@@ -24,7 +30,7 @@
      <control-setting axis="/controls/engines/engine[1]/mixture" value="0.8"/>
   </cruise>
 
-  <cockpit x="8.624" y="0.538" z="1.174"/>
+  <cockpit x="4.714" y="0.356" z="-0.013"/>
 
   <fuselage ax="8.435" ay="2.184" az="-1.675" 
             bx="-7.346" by="2.184" bz="-0.079"
@@ -95,22 +101,30 @@
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
   </vstab>
 
+  <!--  Isotta Fraschini Asso 750
+
+                 source       : http://it.wikipedia.org/wiki/Isotta_Fraschini_Asso_750
+                                http://www.oldengine.org/members/diesel/Duxford/italaer2.htm
+
+                 weight       : 1461 lb (663 kg)
+                 Displacement : 4073 in3
+                 Compression  : 5.7:1
+  -->
   <!-- Moteur avant -->
   <propeller x="5.047" y="0.000" z="1.485"
              radius="1.7" 
-             mass="1155"
-             moment="60.5"
+             mass="1461"
+             moment="10.5"
              cruise-alt="4595"
-             cruise-power="720"
-             cruise-speed="168"
+             cruise-power="800"
+             cruise-speed="126"
              cruise-rpm="1364"
              gear-ratio="0.62"
              contra="1">
              <actionpt x="6.185" y="0.000" z="1.673"/>
              <piston-engine eng-power="890"
-                            eng-rpm="2350"
-                            turbo-mul="1.4"
-                            wastegate-mp="61">
+                            eng-rpm="4073"
+                            compression="5.7">
                             <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
                             <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
                             <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
@@ -118,26 +132,25 @@
              </piston-engine>
   </propeller>
 
-<!-- Moteur arrière -->
+<!-- Moteur arriere -->
   <propeller x="3.648" y="0.00" z="1.273"
              radius="1.7" 
-             mass="1155"
-             moment="60.5"
+             mass="1461"
+             moment="-10.5"
              cruise-alt="4595"
-             cruise-power="720"
-             cruise-speed="168"
+             cruise-power="800"
+             cruise-speed="126"
              cruise-rpm="1364"
              gear-ratio="0.62"
              contra="1">
              <actionpt x="2.526" y="0.000" z="1.102"/>
              <piston-engine eng-power="890"
-                            eng-rpm="2350"
-                            turbo-mul="1.4"
-                            wastegate-mp="61">
-                            <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
-                            <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
-                            <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
-                            <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
+                            eng-rpm="4073"
+                            compression="5.7">
+                            <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
+                            <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
+                            <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
+                            <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
              </piston-engine>
   </propeller>
 
@@ -179,7 +192,7 @@
         on-water="1" 
         on-solid="1" 
         reduce-friction-by-extension="1.15"
-        speed-planing="25" 
+        speed-planing="15" 
         spring-factor-not-planing="0.25">
   </gear>
 
@@ -192,7 +205,7 @@
         on-water="1" 
         on-solid="1" 
         reduce-friction-by-extension="1.15"
-        speed-planing="25" 
+        speed-planing="15" 
         spring-factor-not-planing="0.25">
   </gear>
  
@@ -206,7 +219,7 @@
         on-water="1" 
         on-solid="1" 
         reduce-friction-by-extension="0.9"
-        speed-planing="25" 
+        speed-planing="15" 
         spring-factor-not-planing="3">
   </gear>
   
@@ -219,14 +232,14 @@
         on-water="1" 
         on-solid="1" 
         reduce-friction-by-extension="0.9"
-        speed-planing="25" 
+        speed-planing="15" 
         spring-factor-not-planing="3">
   </gear>
 
   <tank x="3.40" y="3" z="-0.5" capacity="500"/>
   <tank x="3.40" y="-3" z="-0.5" capacity="500"/>
 
-  <!-- CG théorique x=3.435 y=0 z=-0.585 
+  <!-- CG theorique x=3.435 y=0 z=-0.585 
   <ballast x="0.0" y="0.0" z="0.0" mass="2100" /> -->
 
 </airplane>
