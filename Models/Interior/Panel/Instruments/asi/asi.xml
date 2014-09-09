@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>asi.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation> 
+    <type>material</type>
+    <object-name>bezelinside</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <interpolation>
+      <entry><ind>   0.0000 </ind><dep>   0 </dep></entry> <!--   0 km/h -->
+      <entry><ind>  32.3974 </ind><dep>  64 </dep></entry> <!--  60 km/h -->
+      <entry><ind>  43.1965 </ind><dep> 114 </dep></entry> <!--  80 km/h -->
+      <entry><ind>  53.9957 </ind><dep> 175 </dep></entry> <!-- 100 km/h -->
+      <entry><ind>  64.7948 </ind><dep> 231 </dep></entry> <!-- 120 km/h -->
+      <entry><ind>  75.5940 </ind><dep> 284 </dep></entry> <!-- 140 km/h -->
+      <entry><ind>  86.3931 </ind><dep> 334 </dep></entry> <!-- 160 km/h -->
+      <entry><ind>  97.1922 </ind><dep> 380 </dep></entry> <!-- 180 km/h -->
+      <entry><ind> 107.9914 </ind><dep> 423 </dep></entry> <!-- 200 km/h -->
+      <entry><ind> 107.9914 </ind><dep> 518 </dep></entry> <!-- 250 km/h -->
+      <entry><ind> 107.9914 </ind><dep> 577 </dep></entry> <!-- 300 km/h -->
+      <entry><ind> 107.9914 </ind><dep> 652 </dep></entry> <!-- 400 km/h -->
+    </interpolation>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>s55.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/SM-55/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>barres</object-name>
+    <object-name>derive</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>directionG</object-name>
+    <object-name>directionC</object-name>
+    <object-name>directionD</object-name>
+    <object-name>montants</object-name>
+    <object-name>tourvitre</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>verriere</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>verriere</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>barres</object-name>
+    <object-name>derive</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>directionG</object-name>
+    <object-name>directionC</object-name>
+    <object-name>directionD</object-name>
+    <object-name>montants</object-name>
+    <object-name>tourvitre</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <!-- Immatriculation
+  <model>
+    <path>Aircraft/SM-55/Models/Immat/immat.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model> -->
+
+  <!-- Interieur -->
+  <model>
+    <path>Aircraft/SM-55/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Bloc moteurs -->
+  <model>
+    <path>Aircraft/SM-55/Models/engines.xml</path>
+    <offsets>
+      <x-m> -4.457 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.377 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>  10.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Trainée gauche -->
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/wakeG.xml</path>
+    <offsets>
+      <x-m>  0.813 </x-m>
+      <y-m> -2.814 </y-m>
+      <z-m> -2.350 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -45.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model> 
+
+  <!-- Trainée droite -->
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/wakeD.xml</path>
+    <offsets>
+      <x-m>  0.813 </x-m>
+      <y-m>  2.814 </y-m>
+      <z-m> -2.350 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -45.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model> 
+
+  <!-- Gouverne de profondeur -->
+  <animation>
+    <type>rotate</type>
+    <object-name>profondeur</object-name>
+    <property>controls/flight/elevator</property>
+    <factor>15</factor>
+    <center>
+      <x-m> 7.305 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.148 </z-m>
+    </center>
+    <axis>
+      <x> 0.00 </x>
+      <y> 1.00 </y>
+      <z> 0.00 </z>
+    </axis>
+  </animation>
+
+  <!-- Animations des ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronG</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>-20.0</factor>
+    <axis>
+      <x1-m>  -1.300 </x1-m>
+      <y1-m>  -7.499 </y1-m>
+      <z1-m>  -0.377 </z1-m>
+      <x2-m>  -2.023 </x2-m>
+      <y2-m> -11.290 </y2-m>
+      <z2-m>   0.099 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronD</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>-20.0</factor>
+    <axis>
+      <x1-m> -2.023 </x1-m>
+      <y1-m> 11.290 </y1-m>
+      <z1-m>  0.099 </z1-m>
+      <x2-m> -1.300 </x2-m>
+      <y2-m>  7.499 </y2-m>
+      <z2-m> -0.377 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>directionG</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>20</factor>
+    <center>
+      <x-m>  7.160 </x-m>
+      <y-m> -2.184 </y-m>
+      <z-m>  1.036 </z-m>
+    </center>
+    <axis>
+      <x> 0.00 </x>
+      <y> 0.00 </y>
+      <z> 1.00 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>directionC</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>20</factor>
+    <center>
+      <x-m> 7.160 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 1.036 </z-m>
+    </center>
+    <axis>
+      <x> 0.00 </x>
+      <y> 0.00 </y>
+      <z> 1.00 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>directionD</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>20</factor>
+    <center>
+      <x-m> 7.160 </x-m>
+      <y-m> 2.184 </y-m>
+      <z-m> 1.036 </z-m>
+    </center>
+    <axis>
+      <x> 0.00 </x>
+      <y> 0.00 </y>
+      <z> 1.00 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
