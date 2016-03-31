@@ -32,8 +32,8 @@ BARANGER Emmanuel
 August, 03, 2008. 
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
-
 
 [Français]
 ----------
@@ -42,7 +42,7 @@ Un peu d'histoire
 =================
 
 SAVOIA MARCHETTI S 55
-=============================
+=====================
 
 Constructeur                  : Savoia-Marchetti
 Type                          : Bombardier et transport civile
@@ -56,7 +56,6 @@ Vitesse croisière             : 233 km/h
 Equipage                      : 4
 Passagers                     : 8
 
-
 Quelques touches utiles :
 =========================
 
@@ -68,5 +67,5 @@ BARANGER Emmanuel
 03 Août 2008.
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
-

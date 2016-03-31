@@ -6,8 +6,8 @@
     
     <model>
       <livery>
-        <name type="string">Default</name>
-        <texture>texture.png</texture>
+        <name type="string">Green</name>
+        <texture>Liveries/1024x1024/green.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
@@ -15,7 +15,7 @@
         </specular>
       </livery>
       <livery-engine>
-        <texture>Engines/engines.png</texture>
+        <texture>Liveries/1024x1024/green-E.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
