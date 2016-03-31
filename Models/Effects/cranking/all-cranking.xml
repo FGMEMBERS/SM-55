@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Cranking effects -->
+  <!-- Engine 1 left -->
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -5.73643 </x-m>
+      <y-m> -0.55243 </y-m>
+      <z-m>  1.87682 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -5.56280 </x-m>
+      <y-m> -0.55243 </y-m>
+      <z-m>  1.84620 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -5.39773 </x-m>
+      <y-m> -0.55243 </y-m>
+      <z-m>  1.81709 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -5.22349 </x-m>
+      <y-m> -0.55243 </y-m>
+      <z-m>  1.78637 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -5.05384 </x-m>
+      <y-m> -0.55243 </y-m>
+      <z-m>  1.75646 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -4.89152 </x-m>
+      <y-m> -0.55243 </y-m>
+      <z-m>  1.72784 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Engine 1 right -->
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -5.73643 </x-m>
+      <y-m>  0.55243 </y-m>
+      <z-m>  1.87682 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -5.56280 </x-m>
+      <y-m>  0.55243 </y-m>
+      <z-m>  1.84620 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -5.39773 </x-m>
+      <y-m>  0.55243 </y-m>
+      <z-m>  1.81709 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -5.22349 </x-m>
+      <y-m>  0.55243 </y-m>
+      <z-m>  1.78637 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -5.05384 </x-m>
+      <y-m>  0.55243 </y-m>
+      <z-m>  1.75646 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m> -4.89152 </x-m>
+      <y-m>  0.55243 </y-m>
+      <z-m>  1.72784 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Engine 2 left -->
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -3.76237 </x-m>
+      <y-m> -0.55243 </y-m>
+      <z-m>  1.52874 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -3.59730 </x-m>
+      <y-m> -0.55243 </y-m>
+      <z-m>  1.49963 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -3.42306 </x-m>
+      <y-m> -0.55243 </y-m>
+      <z-m>  1.46891 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -3.25341 </x-m>
+      <y-m> -0.55243 </y-m>
+      <z-m>  1.43899 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -3.09110 </x-m>
+      <y-m> -0.55243 </y-m>
+      <z-m>  1.41037 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -2.92657 </x-m>
+      <y-m> -0.55243 </y-m>
+      <z-m>  1.38136 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Engine 2 right -->
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -3.76237 </x-m>
+      <y-m>  0.55243 </y-m>
+      <z-m>  1.52874 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -3.59730 </x-m>
+      <y-m>  0.55243 </y-m>
+      <z-m>  1.49963 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -3.42306 </x-m>
+      <y-m>  0.55243 </y-m>
+      <z-m>  1.46891 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -3.25341 </x-m>
+      <y-m>  0.55243 </y-m>
+      <z-m>  1.43899 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -3.09110 </x-m>
+      <y-m>  0.55243 </y-m>
+      <z-m>  1.41037 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -2.92657 </x-m>
+      <y-m>  0.55243 </y-m>
+      <z-m>  1.38136 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>

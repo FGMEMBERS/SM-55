@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <keyboard>
+    
+    <key n="100">
+      <name>d</name>
+      <desc>Crew door</desc>
+      <binding>
+        <command>nasal</command>
+        <script>s55.doorsystem.crewexport();</script>
+      </binding>
+    </key>
+    
+    <key n="68">
+      <name>D</name>
+      <desc>Passenger door</desc>
+      <binding>
+        <command>nasal</command>
+        <script>s55.doorsystem.passengerexport();</script>
+      </binding>
+    </key>
+    
+  </keyboard>
+  
+</PropertyList>
