@@ -1,7 +1,7 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <default>
     <menu n="10">
       <label>Savioa Marchetti S55</label>
@@ -13,17 +13,7 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
-<!--
-      <item>
-        <label>Immatriculation</label>
-        <binding>
-          <command>nasal</command>
-          <script>s55.immat_dialog.toggle()</script>
-        </binding>
-      </item>
--->
     </menu>
   </default>
-
+  
 </PropertyList>
-

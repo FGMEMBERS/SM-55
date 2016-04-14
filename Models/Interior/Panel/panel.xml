@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -15,24 +15,18 @@
   <model>
     <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.105 </x-m>
+      <x-m>  0.102 </x-m>
       <y-m> -0.413 </y-m>
       <z-m>  0.051 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.105 </x-m>
+      <x-m>  0.102 </x-m>
       <y-m>  0.277 </y-m>
       <z-m>  0.051 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
@@ -40,24 +34,18 @@
   <model>
     <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m>  0.103 </x-m>
+      <x-m>  0.104 </x-m>
       <y-m> -0.341 </y-m>
       <z-m>  0.051 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m>  0.103 </x-m>
+      <x-m>  0.104 </x-m>
       <y-m>  0.349 </y-m>
       <z-m>  0.051 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
@@ -65,24 +53,18 @@
   <model>
     <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m>  0.105 </x-m>
+      <x-m>  0.103 </x-m>
       <y-m> -0.271 </y-m>
       <z-m>  0.051 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m>  0.105 </x-m>
+      <x-m>  0.103 </x-m>
       <y-m>  0.419 </y-m>
       <z-m>  0.051 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
@@ -90,24 +72,18 @@
   <model>
     <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
-      <x-m>  0.104 </x-m>
+      <x-m>  0.102 </x-m>
       <y-m> -0.423 </y-m>
       <z-m> -0.036 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
-      <x-m>  0.104 </x-m>
+      <x-m>  0.102 </x-m>
       <y-m>  0.267 </y-m>
       <z-m> -0.036 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
@@ -118,9 +94,6 @@
       <x-m>  0.105 </x-m>
       <y-m> -0.354 </y-m>
       <z-m> -0.051 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
@@ -130,9 +103,6 @@
       <x-m>  0.105 </x-m>
       <y-m>  0.337 </y-m>
       <z-m> -0.051 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
@@ -140,26 +110,19 @@
   <model>
     <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m>  0.105 </x-m>
+      <x-m>  0.103 </x-m>
       <y-m> -0.271 </y-m>
       <z-m> -0.049 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/SM-55/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m>  0.105 </x-m>
+      <x-m>  0.103 </x-m>
       <y-m>  0.419 </y-m>
       <z-m> -0.049 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
 </PropertyList>
-

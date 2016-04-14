@@ -4,15 +4,34 @@
 
   <path>s55.ac</path>
 
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/SM-55/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/SM-55/Models/Liveries", 10);
+      
+      var self = cmdarg();
+      
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+      
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+    
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
-
+  
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
@@ -27,13 +46,10 @@
     <object-name>directionD</object-name>
     <object-name>montants</object-name>
     <object-name>tourvitre</object-name>
-
+    
+    <object-name>trous</object-name>
+    
     <!-- Objets transparents -->
-    <object-name>verriere</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
     <object-name>verriere</object-name>
   </animation>
 
@@ -51,115 +67,183 @@
     <object-name>directionD</object-name>
     <object-name>montants</object-name>
     <object-name>tourvitre</object-name>
-
+    
+    <object-name>trous</object-name>
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
-  <!-- Immatriculation
-  <model>
-    <path>Aircraft/SM-55/Models/Immat/immat.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
-    </offsets>
-  </model> -->
-
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>barres</object-name>
+    <object-name>derive</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>directionG</object-name>
+    <object-name>directionC</object-name>
+    <object-name>directionD</object-name>
+    <object-name>montants</object-name>
+    <object-name>tourvitre</object-name>
+  </effect>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/SM-55/Models/Effects/Glass/glass</inherits-from>
+    <object-name>verriere</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>verriere</object-name>
+  </effect>
+  
   <!-- Interieur -->
   <model>
     <path>Aircraft/SM-55/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
-    </offsets>
   </model>
 
+  <!-- Shadow -->
+  <model>
+    <path>Aircraft/SM-55/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0 </x-m>
+      <y-m>  0 </y-m>
+      <z-m> -2 </z-m>
+    </offsets>
+  </model>
+  
   <!-- Bloc moteurs -->
   <model>
-    <path>Aircraft/SM-55/Models/engines.xml</path>
+    <path>Aircraft/SM-55/Models/Engines/engines.xml</path>
     <offsets>
       <x-m> -4.457 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  1.377 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>  10.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg> 10 </pitch-deg>
     </offsets>
   </model>
 
+  <animation>
+    <type>material</type>
+    <object-name>corps</object-name>
+    <object-name>moteurs</object-name>
+    <object-name>helice1</object-name>
+    <object-name>helice2</object-name>
+    <object-name>bol1</object-name>
+    <object-name>bol2</object-name>
+    
+    <property-base>sim/model/livery-engine</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>Engines/engines.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+  </animation>
+  
+  <!-- Cranking effects -->
+  <model>
+    <path>Aircraft/SM-55/Models/Effects/cranking/all-cranking.xml</path>
+  </model>
+  
   <!-- Trainée gauche -->
   <model>
-    <path>Aircraft/SM-55/Models/Effects/wakeG.xml</path>
+    <path>Aircraft/SM-55/Models/Effects/Wakes/wakeG.xml</path>
     <offsets>
       <x-m>  0.813 </x-m>
       <y-m> -2.814 </y-m>
-      <z-m> -2.350 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -45.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <z-m> -1.790 </z-m>
     </offsets>
   </model> 
 
   <!-- Trainée droite -->
   <model>
-    <path>Aircraft/SM-55/Models/Effects/wakeD.xml</path>
+    <path>Aircraft/SM-55/Models/Effects/Wakes/wakeD.xml</path>
     <offsets>
       <x-m>  0.813 </x-m>
       <y-m>  2.814 </y-m>
-      <z-m> -2.350 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -45.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <z-m> -1.790 </z-m>
     </offsets>
   </model> 
 
+  <!-- Gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>directionG</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -15 </factor>
+    <center>
+      <x-m>  7.236 </x-m>
+      <y-m> -2.184 </y-m>
+      <z-m>  1.036 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>directionC</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -15 </factor>
+    <center>
+      <x-m> 7.160 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 1.036 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>directionD</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -15 </factor>
+    <center>
+      <x-m> 7.236 </x-m>
+      <y-m> 2.184 </y-m>
+      <z-m> 1.036 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+    
   <!-- Gouverne de profondeur -->
   <animation>
     <type>rotate</type>
     <object-name>profondeur</object-name>
-    <property>controls/flight/elevator</property>
-    <factor>15</factor>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 15 </factor>
     <center>
-      <x-m> 7.305 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.148 </z-m>
+      <x-m> 7.38043 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 0.15892 </z-m>
     </center>
     <axis>
-      <x> 0.00 </x>
-      <y> 1.00 </y>
-      <z> 0.00 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -168,14 +252,14 @@
     <type>rotate</type>
     <object-name>aileronG</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
-    <factor>-20.0</factor>
+    <factor> 15 </factor>
     <axis>
-      <x1-m>  -1.300 </x1-m>
-      <y1-m>  -7.499 </y1-m>
-      <z1-m>  -0.377 </z1-m>
-      <x2-m>  -2.023 </x2-m>
-      <y2-m> -11.290 </y2-m>
-      <z2-m>   0.099 </z2-m>
+      <x1-m>  -1.93014 </x1-m>
+      <y1-m> -11.17937 </y1-m>
+      <z1-m>   0.08900 </z1-m>
+      <x2-m>  -1.24515 </x2-m>
+      <y2-m>  -7.49865 </y2-m>
+      <z2-m>  -0.38866 </z2-m>
     </axis>
   </animation>
 
@@ -183,68 +267,61 @@
     <type>rotate</type>
     <object-name>aileronD</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
-    <factor>-20.0</factor>
+    <factor> 15 </factor>
     <axis>
-      <x1-m> -2.023 </x1-m>
-      <y1-m> 11.290 </y1-m>
-      <z1-m>  0.099 </z1-m>
-      <x2-m> -1.300 </x2-m>
-      <y2-m>  7.499 </y2-m>
-      <z2-m> -0.377 </z2-m>
+      <x1-m> -1.24515 </x1-m>
+      <y1-m>  7.49865 </y1-m>
+      <z1-m> -0.38866 </z1-m>
+      <x2-m> -1.93014 </x2-m>
+      <y2-m> 11.17937 </y2-m>
+      <z2-m>  0.08900 </z2-m>
     </axis>
   </animation>
 
-  <!-- Gouverne de direction -->
-  <animation>
-    <type>rotate</type>
-    <object-name>directionG</object-name>
-    <property>controls/flight/rudder</property>
-    <factor>20</factor>
-    <center>
-      <x-m>  7.160 </x-m>
-      <y-m> -2.184 </y-m>
-      <z-m>  1.036 </z-m>
-    </center>
-    <axis>
-      <x> 0.00 </x>
-      <y> 0.00 </y>
-      <z> 1.00 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>directionC</object-name>
-    <property>controls/flight/rudder</property>
-    <factor>20</factor>
-    <center>
-      <x-m> 7.160 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 1.036 </z-m>
-    </center>
-    <axis>
-      <x> 0.00 </x>
-      <y> 0.00 </y>
-      <z> 1.00 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>directionD</object-name>
-    <property>controls/flight/rudder</property>
-    <factor>20</factor>
-    <center>
-      <x-m> 7.160 </x-m>
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/SM-55/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> 7.110 </x-m>
       <y-m> 2.184 </y-m>
-      <z-m> 1.036 </z-m>
-    </center>
-    <axis>
-      <x> 0.00 </x>
-      <y> 0.00 </y>
-      <z> 1.00 </z>
-    </axis>
-  </animation>
-
+      <z-m> 1.845 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m>  -2.95278 </x-m>
+      <y-m> -11.65297 </y-m>
+      <z-m>   0.16073 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  -3.00278 </x-m>
+      <y-m> -11.65297 </y-m>
+      <z-m>   0.16073 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -2.95278 </x-m>
+      <y-m> 11.65297 </y-m>
+      <z-m>  0.16073 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/SM-55/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -3.00278 </x-m>
+      <y-m> 11.65297 </y-m>
+      <z-m>  0.16073 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>
-
